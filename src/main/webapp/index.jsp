@@ -3,7 +3,7 @@
 <%@page errorPage="erro.jsp" isErrorPage="false" %>
 
 <jsp:useBean class="utfpr.ct.dainf.if6ae.exemplos.CadastroBean" id="info" scope="session"/>
-<jsp:setProperty name="info" property="*"/>
+<jsp:setProperty name="info" property="*" />
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>CADASTRO</h1>
-        <form action='cadastro.jsp' method='post'>
+        <form action='index.jsp' method='post'>
             <table>
                 <tr>
                     <td> Nome: <input type='text' name='nome' size='40' value='${info.nome}'
