@@ -14,7 +14,7 @@ public class CadastroBean {
     private String cidade = "";
     private String fone = "";
     private String email = "";
-    private GregorianCalendar validade = new GregorianCalendar();
+    private final GregorianCalendar validade = new GregorianCalendar();
     private int dia = validade.get(Calendar.DAY_OF_MONTH);
     private int mes = validade.get(Calendar.MONTH);
     private int ano = validade.get(Calendar.YEAR);

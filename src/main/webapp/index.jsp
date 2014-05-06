@@ -55,12 +55,12 @@
                         &nbsp;/&nbsp;
                         <select name='mes'>
                             <% for (int m = 0; m < 12; m++) { %>
-                            <option value='<%= m %>' <%= m == info.getMes() ? "selected" : "" %>>${info.meses[m]}</option>
+                            <option value='<%= m %>' <%= m == info.getMes() ? "selected" : "" %>><%= info.getMeses()[m] %></option>
                             <% } %>
                         </select>
                         &nbsp;/&nbsp;
                         <select name='ano'>
-                            <% for (int a = 2004; a <= 2010; a++) { %>
+                            <% for (int a = 2004; a <= 2015; a++) { %>
                             <option value='<%= a %>' <%= a == info.getAno() ? "selected" : "" %>><%= a %></option>
                             <% } %>
                         </select>
