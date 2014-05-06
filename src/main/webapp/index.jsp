@@ -78,6 +78,7 @@
     </body>
 </html>
 
+                    
 <% if (request.getMethod().equals("POST")) {
     response.sendRedirect("/exemplo-jsp/sucesso.jsp");
 } %>
