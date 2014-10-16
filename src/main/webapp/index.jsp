@@ -79,6 +79,8 @@
 </html>
 
                     
-<% if (request.getMethod().equals("POST")) {
-    response.sendRedirect("/exemplo-jsp/sucesso.jsp");
-} %>
+<% 
+    if (request.getMethod().equals("POST")) {
+        response.sendRedirect(request.getContextPath() + "/sucesso.jsp");
+    } 
+%>
