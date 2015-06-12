@@ -25,9 +25,9 @@
                 <tr>
                     <td> 
                         Perfil: <select name='perfil'> 
-                            <option id='Cliente'>Cliente</option>
-                            <option id='Gerente'>Gerente</option>
-                            <option id='Administrador'>Administrador</option>
+                            <option id='Cliente' value="1">Cliente</option>
+                            <option id='Gerente' value="2">Gerente</option>
+                            <option id='Administrador' value="3">Administrador</option>
                         </select>  
                     </td>
                 </tr>
@@ -36,8 +36,15 @@
         </form>
                     <%
                         if (request.getMethod().equals("POST")) {
+                            String s = new String();
+                            if(info.getPerfil().equals("1"))
+                                s = "Cliente";
+                            else if(info.getPerfil().equals("2"))
+                                s = "Gerente";
+                            else if(info.getPerfil().equals("3"))
+                                s = "Administrador";
                             if(info.getLogin().equals(info.getSenha())){ %>
-                            <div style="color: blue">${info.perfil}, login bem sucedido, para ${info.login} às
+                            <div style="color: blue"><%=s%>, login bem sucedido, para ${info.login} às
                             <% Date data = new Date(); 
                             %> <%=data%>
                             </div>
