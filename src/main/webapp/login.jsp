@@ -32,7 +32,7 @@
                     </td>
                 </tr>
             </table>
-            <input type='submit' value='Ok'/>
+            <input type='submit' value='Enviar'/>
         </form>
                     <%
                         if (request.getMethod().equals("POST")) {
